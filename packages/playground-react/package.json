@@ -1,0 +1,19 @@
+{
+  "name": "playground-react",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "prebuild": "pnpm --filter @uno-ux/react build",
+    "dev:design": "pnpm --filter @uno-ux/react watch",
+    "dev:vite": "vite dev",
+    "dev": "npm-run-all -p dev:*",
+    "build": "vite build",
+    "start": "vite start",
+    "clean": "rimraf ./dist"
+  },
+  "dependencies": {
+    "@uno-ux/react": "*",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}

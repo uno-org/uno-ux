@@ -1,0 +1,26 @@
+{
+  "name": "@uno-ux/react",
+  "version": "0.0.1",
+  "description": "A set of completely unstyled, fully accessible UI components for React, designed to integrate beautifully with Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uno-org/uno-ux.git"
+  },
+  "keywords": [
+    "React",
+    "Vite",
+    "Handless",
+    "Tailwind CSS",
+    "Unocss"
+  ],
+  "author": "zgsgs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uno-org/uno-ux/issues"
+  },
+  "homepage": "https://github.com/uno-org/uno-ux#readme"
+}

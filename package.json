@@ -1,0 +1,28 @@
+{
+  "name": "uno-ux",
+  "version": "0.0.1",
+  "description": "Based on the development concept of handles-ui, it is a front-end component library that realizes the separation of style and logic and focuses on user interaction.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uno-org/uno-ux.git"
+  },
+  "keywords": [
+    "Vite",
+    "Handless",
+    "Tailwind CSS",
+    "Unocss"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uno-org/uno-ux/issues"
+  },
+  "homepage": "https://github.com/uno-org/uno-ux#readme",
+  "devDependencies": {
+    "@zgsgs/eslint-config": "^0.0.6"
+  }
+}
