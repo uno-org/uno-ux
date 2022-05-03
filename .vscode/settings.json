@@ -3,6 +3,8 @@
     "antfu",
     "flatpickr",
     "popperjs",
+    "tsup",
+    "unoux",
     "unstyled"
   ]
 }
