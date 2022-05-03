@@ -1,14 +1,10 @@
 {
   "name": "@uno-ux/react",
+  "type": "module",
   "version": "0.0.1",
   "description": "A set of completely unstyled, fully accessible UI components for React, designed to integrate beautifully with Tailwind CSS.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/uno-org/uno-ux.git"
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "React",
@@ -17,8 +13,39 @@
     "Tailwind CSS",
     "Unocss"
   ],
-  "author": "zgsgs",
   "license": "MIT",
+  "author": "zgsgs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uno-org/uno-ux.git",
+    "directory": "packages/@uno-ux-react"
+  },
+  "main": "dist/index.cjs",
+  "typings": "dist/index.d.ts",
+  "module": "dist/uno-ux.esm.js",
+  "browser": "dist/index.js",
+  "exports": {
+    "import": "./dist/uno-ux.esm.js",
+    "require": "./dist/index.cjs",
+    "types": "./dist/index.d.ts"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14"
+  },
+  "browserslist": [
+    "Chrome >= 51",
+    "iOS >= 10"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "playground": "pnpm dev --filter playground-react",
+    "clean": "rimraf ./dist"
+  },
   "bugs": {
     "url": "https://github.com/uno-org/uno-ux/issues"
   },
