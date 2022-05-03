@@ -1,25 +1,24 @@
 {
   "name": "playground-vue",
-  "private": true,
   "version": "0.0.0",
-  "directories": {
-    "example": "examples"
-  },
+  "private": true,
   "scripts": {
     "prebuild": "pnpm --filter @uno-ux/vue build",
-    "dev:design": "pnpm --filter @uno-ux/vue watch",
-    "dev:next": "vite serve",
+    "dev:unoux": "pnpm --filter @uno-ux/vue watch",
+    "dev:serve": "vite serve",
     "dev": "npm-run-all -p dev:*",
     "build": "NODE_ENV=production vite build",
     "clean": "rimraf ./dist"
   },
   "dependencies": {
-    "@uno-ux/vue": "*",
+    "@uno-ux/shared": "workspace:*",
+    "@uno-ux/vue": "workspace:*",
     "vue": "^3.2.33",
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
-    "vite": "^2.9.7"
+    "vite": "^2.9.7",
+    "vue-tsc": "^0.29.8"
   }
 }
