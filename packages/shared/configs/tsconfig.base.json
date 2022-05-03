@@ -1,0 +1,11 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "compilerOptions": {
+    "preserveValueImports": false
+  },
+  "exclude": [
+    "node_module",
+    "**/__tests__",
+    "dist/**"
+  ]
+}

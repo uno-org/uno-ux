@@ -1,0 +1,43 @@
+{
+  "name": "@uno-ux/shared",
+  "version": "0.0.1",
+  "private": true,
+  "description": "An infrastructure monorepo shared library for all projects and apps.",
+  "keywords": [
+    "shared",
+    "utils",
+    "types"
+  ],
+  "license": "MIT",
+  "author": "zgsgs",
+  "exports": {
+    "./types": {
+      "import": "./dist/types/index.mjs",
+      "require": "./dist/types/index.js"
+    },
+    "./utils": {
+      "import": "./dist/utils/index.mjs",
+      "require": "./dist/utils/index.js"
+    },
+    "./config": "./config"
+  },
+  "scripts": {
+    "prepare": "pnpm build",
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "browser": {
+    "./types": "./dist/types/index.js",
+    "./utils": "./dist/utils/index.js"
+  },
+  "devDependencies": {
+    "tsup": "^5.12.6"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "browserslist": [
+    "Chrome >= 51",
+    "iOS >= 10"
+  ]
+}
