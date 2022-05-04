@@ -10,7 +10,7 @@
     "Unocss"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "zgsgs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uno-org/uno-ux.git"
@@ -26,6 +26,10 @@
     "lint:fix": "lint-staged",
     "test": "vitest test",
     "clear:dist": "rimraf dist"
+  },
+  "dependencies": {
+    "@uno-ux/shared": "workspace:*",
+    "@uno-ux/vue": "workspace:*"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",

@@ -9,10 +9,10 @@
       "DOM",
       "DOM.Iterable",
       "ES2019"
-    ],
+    ]
   },
   "include": [
     "packages",
     "types"
-  ],
+  ]
 }

@@ -4,7 +4,7 @@
  * @LastEditTime: 2022-04-09 20:05:00
  * @LastEditors: Lin ZeFan
  * @Description:
- * @FilePath: \tg-ui\examples\src\constants\index.ts
+ * @FilePath: \uno-ux\examples\src\constants\index.ts
  *
  */
 export const PREFIX = 'tg-'

@@ -20,20 +20,6 @@
     "url": "git+https://github.com/uno-org/uno-ux.git",
     "directory": "packages/@uno-ux-vue"
   },
-  "main": "dist/index.cjs",
-  "typings": "dist/index.d.ts",
-  "module": "dist/uno-ux.esm.js",
-  "browser": "dist/index.js",
-  "exports": {
-    "import": "./dist/uno-ux.esm.js",
-    "require": "./dist/index.cjs",
-    "types": "./dist/index.d.ts"
-  },
-  "files": [
-    "README.md",
-    "dist"
-  ],
-  "sideEffects": false,
   "engines": {
     "node": ">=14"
   },

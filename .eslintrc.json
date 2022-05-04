@@ -1,3 +1,6 @@
 {
-  "extends": "@zgsgs"
+  "extends": "@zgsgs",
+  "rules": {
+    "import/export": 0
+  }
 }
