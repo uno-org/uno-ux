@@ -12,6 +12,11 @@ import type { ProjectManifest } from '@pnpm/types'
 import { pkgRoot, uiPackage, uiRoot } from '../config/paths'
 import { bundleConfigEntries, target } from '../config/bundle'
 
+// 写入包
+export function writeBundles(bundle: RollupBuild, options: OutputOptions[]) {
+  return Promise.all(options.map(option => bundle.write(option)))
+}
+
 // 获取包依赖清单
 export const getPackageManifest = (pkgPath: string) => {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -39,16 +44,10 @@ export const generateExternal = async (options: { full: boolean }) => {
     if (!options.full)
       packages.push('@vue', ...dependencies)
 
-    consola.log(3333333)
     return [...new Set(packages)].some(
       pkg => id === pkg || id.startsWith(`${pkg}/`),
     )
   }
-}
-
-// 写入包
-export function writeBundles(bundle: RollupBuild, options: OutputOptions[]) {
-  return Promise.all(options.map(option => bundle.write(option)))
 }
 
 // 排除文件

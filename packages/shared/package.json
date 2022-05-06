@@ -11,7 +11,6 @@
   "license": "MIT",
   "author": "zgsgs",
   "scripts": {
-    "prepare": "pnpm build",
     "dev": "tsup --watch",
     "build": "tsup"
   },

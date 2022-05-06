@@ -12,7 +12,7 @@ const install = (app: App) => {
   })
 }
 
-// app.use(UnoUX)
+// use: app.use(UnoUX)
 export default {
   install,
 }
