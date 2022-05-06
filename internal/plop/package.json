@@ -1,0 +1,16 @@
+{
+  "name": "@uno-ux/plop",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "new": "plop --plopfile ./plopfile.ts"
+  },
+  "devDependencies": {
+    "@uno-ux/shared": "workspace:*",
+    "plop": "2.6.0"
+  }
+}

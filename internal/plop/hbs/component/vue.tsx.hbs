@@ -1,0 +1,30 @@
+// 状态：
+// v-model：
+
+import { defineComponent } from 'vue'
+import { {{camelName}}Emits, {{camelName}}Props } from './props'
+
+export default defineComponent({
+  props: {{camelName}}Props,
+  setup(props) {
+    const Tag = props.as
+
+    const emit = defineEmits({{camelName}}Emits)
+
+    return {
+      Tag,
+      emit
+    }
+  },
+
+  render() {
+    const children = this.$slots.default?.() || []
+    const Tag = this.Tag
+
+    return (
+      <Tag onMouseup={this.onMouseup} onMousedown={this.onMousedown}>
+        {children}
+      </Tag>
+    )
+  },
+})
